@@ -67,18 +67,17 @@ class Operator:
             return x//y
         if self.symbol == '^':
             return x**y
-        elif self.symbol == '/':
+        if self.symbol == '/':
             return x/y
-        elif self.symbol == '*':
+        if self.symbol == '*':
             return x*y
-        elif self.symbol == '%':
+        if self.symbol == '%':
             return x%y
-        elif self.symbol == '+':
+        if self.symbol == '+':
             return x+y
-        elif self.symbol == '-':
+        if self.symbol == '-':
             return x-y
-        else:
-            return
+        return
 
 			
 class Stack:
